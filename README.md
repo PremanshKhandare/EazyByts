@@ -66,15 +66,6 @@ npm start
 
 ---
 
-### 📄 **API Endpoints**  
-- `GET /api/projects` – Fetch all projects.  
-- `POST /api/projects` – Add a new project.  
-- `GET /api/blogs` – Fetch all blogs.  
-- `POST /api/blogs` – Create a new blog post.  
-- `POST /api/contact` – Send a contact message.  
-
----
-
 ### 💡 **Contributing**  
 1. Fork the project 🍴  
 2. Create your feature branch  
