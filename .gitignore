@@ -1,5 +1,26 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Dependency directories
+backend/node_modules/
+frontend/node_modules/
+
+# Others
+package-lock.json
+
 # dependencies
 /node_modules
 /.pnp

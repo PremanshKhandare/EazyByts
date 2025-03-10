@@ -1,0 +1,58 @@
+.n-wrapper {
+  height: 10vh;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 0;
+  border-radius: 12px;
+  background: transparent; /* Ensures the shadow is visible */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds bottom shadow */
+  position: sticky; /* Optional: Makes navbar stick to top */
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 400;
+}
+
+.n-list {
+  flex: 10;
+}
+.n-list > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+}
+
+.n-list > ul :hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}

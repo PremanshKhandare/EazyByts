@@ -1,0 +1,130 @@
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 20px;
+  gap: 2rem;
+  background: #f9f9f9; /* Subtle background for contrast */
+}
+
+/* Title styling */
+.awesome {
+  text-align: center;
+  max-width: 600px;
+}
+
+.awesome h2 {
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.awesome p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  min-height: 300px;
+  width: 300px;
+  background: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #ff6600;
+  box-shadow: 0 8px 20px rgba(255, 102, 0, 0.3);
+}
+
+/* Blurred Background Effects */
+.blur {
+  width: 15rem;
+  height: 10rem;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+  z-index: -1;
+  background: rgba(255, 102, 0, 0.2);
+}
+
+.s-blur1 {
+  top: 10rem;
+  left: -5rem;
+}
+
+.s-blur2 {
+  bottom: 10rem;
+  right: -5rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .services {
+      padding: 30px;
+  }
+
+  .awesome h2 {
+      font-size: 2rem;
+  }
+
+  .cards-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+      margin-top: 0;
+      padding: 20px;
+      gap: 3rem;
+  }
+
+  .awesome h2 {
+      font-size: 1.8rem;
+  }
+
+  .cards-container {
+      gap: 1rem;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 95%;
+  }
+}

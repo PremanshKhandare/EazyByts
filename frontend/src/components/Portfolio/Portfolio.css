@@ -1,0 +1,87 @@
+.portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  background: #f8f9fa; /* Light background for better contrast */
+  padding: 3rem 2rem;
+}
+
+/* Heading styles */
+.portfolio span:nth-of-type(1) {
+  color: #222; /* Darker black for better readability */
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.portfolio span:nth-of-type(2) {
+  color: #ff6600; /* Brighter orange */
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Slider styles */
+.portfolio .swiper {
+  overflow: visible !important;
+}
+
+.portfolio-slider {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-slider .swiper-slide {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image styles */
+.portfolio img {
+  width: 19rem;
+  filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  border-radius: 19px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect for images */
+.portfolio img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .portfolio {
+      height: auto;
+      padding: 2rem;
+  }
+
+  .portfolio span:nth-of-type(1),
+  .portfolio span:nth-of-type(2) {
+      font-size: 1.8rem;
+      text-align: center;
+  }
+
+  .portfolio-slider {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .portfolio-slider .swiper-slide {
+      width: 100%;
+  }
+
+  .portfolio img {
+      width: 90%;
+  }
+}
